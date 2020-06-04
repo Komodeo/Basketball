@@ -1,2 +1,3 @@
 # Basketball
- Zenva Academy Basketball game
+ Zenva Academy Basketball game built using this course:
+ https://academy.zenva.com/course/unity-game-development-create-a-basketball-game/
