@@ -675,6 +675,7 @@ MonoBehaviour:
   ball: {fileID: 970135221}
   playerCamera: {fileID: 235116692}
   ballDistance: 2.25
+  ballThrowingForce: 550
 --- !u!1 &903304306
 GameObject:
   m_ObjectHideFlags: 0
