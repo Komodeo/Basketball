@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     public float ballDistance = 2f;
     public float ballThrowingForce = 5f;
 
-    private bool holdingBall = true;
+    public bool holdingBall = true;
 
     // Start is called before the first frame update
     void Start()
