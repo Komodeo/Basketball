@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         ball.GetComponent<Rigidbody>().useGravity = false;
-        playerCamera.transform.position = new Vector3(Random.Range(-3, 3), 0, 0);
+        playerCamera.transform.position = new Vector3(Random.Range(-3, 3), 0, Random.Range(-4, 2));
     }
 
     // Update is called once per frame

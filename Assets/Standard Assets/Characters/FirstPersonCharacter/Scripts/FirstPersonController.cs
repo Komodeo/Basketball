@@ -94,7 +94,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         }
 
 
-        private void FixedUpdate()
+        /*private void FixedUpdate()
         {
             float speed;
             GetInput(out speed);
@@ -133,7 +133,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             UpdateCameraPosition(speed);
 
             m_MouseLook.UpdateCursorLock();
-        }
+        }*/
 
 
         private void PlayJumpSound()
