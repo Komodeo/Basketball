@@ -13,6 +13,7 @@ namespace UnityStandardAssets.CrossPlatformInput.Inspector
         // EDITOR_MOBILE_INPUT : denotes that mobile input should be used in editor, if a mobile build target is selected. (i.e. using Unity Remote app).
         // MOBILE_INPUT : denotes that mobile input should be used right now!
 
+        [Obsolete]
         static CrossPlatformInitialize()
         {
             var defines = GetDefinesList(buildTargetGroups[0]);
@@ -51,6 +52,7 @@ namespace UnityStandardAssets.CrossPlatformInput.Inspector
 
 
         [MenuItem("Mobile Input/Enable", true)]
+        [Obsolete]
         private static bool EnableValidate()
         {
             var defines = GetDefinesList(mobileBuildTargetGroups[0]);
@@ -59,6 +61,7 @@ namespace UnityStandardAssets.CrossPlatformInput.Inspector
 
 
         [MenuItem("Mobile Input/Disable")]
+        [Obsolete]
         private static void Disable()
         {
             SetEnabled("MOBILE_INPUT", false, true);
@@ -75,6 +78,7 @@ namespace UnityStandardAssets.CrossPlatformInput.Inspector
 
 
         [MenuItem("Mobile Input/Disable", true)]
+        [Obsolete]
         private static bool DisableValidate()
         {
             var defines = GetDefinesList(mobileBuildTargetGroups[0]);
@@ -99,7 +103,7 @@ namespace UnityStandardAssets.CrossPlatformInput.Inspector
                 BuildTargetGroup.WSA 
             };
 
-
+        [Obsolete]
         private static void SetEnabled(string defineName, bool enable, bool mobile)
         {
             //Debug.Log("setting "+defineName+" to "+enable);

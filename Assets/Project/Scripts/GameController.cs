@@ -2,17 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class GameController : MonoBehaviour
 {
 
     public Player player;
     public float resetTimer = 5f;
+    public static class StaticClass
+    {
+        public static int Score
+        {
+            get;
+            set;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        resetTimer = 5f;
     }
 
     // Update is called once per frame

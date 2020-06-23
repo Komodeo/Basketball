@@ -459,6 +459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectObject: {fileID: 1381188580}
+  score: 0
 --- !u!1 &624186544
 GameObject:
   m_ObjectHideFlags: 0

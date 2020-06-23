@@ -6,12 +6,15 @@ public class ScoreArea : MonoBehaviour
 {
 
     public GameObject effectObject;
+    public int score;
 
     private void OnTriggerEnter(Collider otherCollider)
     {
         if (otherCollider.GetComponent<Ball>() != null)
         {
             effectObject.SetActive(true);
+            score++;
+            Debug.Log(score);
         }
     }
 

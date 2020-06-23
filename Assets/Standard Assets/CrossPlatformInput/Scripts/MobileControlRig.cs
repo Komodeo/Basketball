@@ -50,7 +50,7 @@ namespace UnityStandardAssets.CrossPlatformInput
             EditorApplication.update += Update;
         }
 
-
+        [Obsolete]
         private void OnDisable()
         {
             EditorUserBuildSettings.activeBuildTargetChanged -= Update;
