@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScoreArea : MonoBehaviour
 {
 
     public GameObject effectObject;
-    public int score;
+    public static int score;
 
     private void OnTriggerEnter(Collider otherCollider)
     {
