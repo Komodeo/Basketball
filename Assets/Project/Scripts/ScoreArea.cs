@@ -7,7 +7,7 @@ public class ScoreArea : MonoBehaviour
 {
 
     public GameObject effectObject;
-    public static int score;
+    public static int score = 0;
 
     private void OnTriggerEnter(Collider otherCollider)
     {
@@ -15,7 +15,6 @@ public class ScoreArea : MonoBehaviour
         {
             effectObject.SetActive(true);
             score++;
-            Debug.Log(score);
         }
     }
 
