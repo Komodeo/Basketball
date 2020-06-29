@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityStandardAssets.Characters.FirstPerson;
 
 public class Player : MonoBehaviour
@@ -15,11 +16,17 @@ public class Player : MonoBehaviour
 
     public bool holdingBall = true;
 
+    public float distanceToHoop = 0;
+    GameObject hoopPosition;
+
     // Start is called before the first frame update
     void Start()
     {
         ball.GetComponent<Rigidbody>().useGravity = false;
         playerCamera.transform.position = new Vector3(Random.Range(-3, 3), 0, Random.Range(-4, 2));
+        hoopPosition = GameObject.Find("ScoreArea");
+        distanceToHoop = Vector3.Distance(playerCamera.transform.position, hoopPosition.transform.position);
+        print(distanceToHoop);
     }
 
     // Update is called once per frame
@@ -38,6 +45,7 @@ public class Player : MonoBehaviour
             }
         
         }
+        
         
     }
 }
