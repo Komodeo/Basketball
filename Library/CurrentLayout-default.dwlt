@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 680, y: 342}
   m_MaxSize: {x: 12005, y: 8042}
   vertical: 0
-  controlID: 1457
+  controlID: 2508
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 342}
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
-  controlID: 1365
+  controlID: 2509
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 1366
+  controlID: 2510
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -600,20 +600,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Standard Assets/Characters/FirstPersonCharacter/Prefabs
+    - Assets/Project/Materials
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Standard Assets/Characters/FirstPersonCharacter/Prefabs
+  - Assets/Project/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\code\Basketball
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 15}
-    m_SelectedIDs: 2e350000
-    m_LastClickedID: 13614
-    m_ExpandedIDs: 0000000016350000183500001a3500001c3500001e35000000ca9a3b
+    m_SelectedIDs: e24b0000
+    m_LastClickedID: 19426
+    m_ExpandedIDs: 00000000d44b0000d64b0000d84b0000da4b0000dc4b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -641,7 +641,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000016350000183500001a3500001c3500001e35000000ca9a3b
+    m_ExpandedIDs: 00000000d44b0000d64b0000d84b0000da4b0000dc4b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -760,4 +760,4 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 211
