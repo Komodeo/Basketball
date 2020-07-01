@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
-using UnityStandardAssets.Characters.FirstPerson;
 
 public class Player : MonoBehaviour
 
@@ -23,10 +22,11 @@ public class Player : MonoBehaviour
     void Start()
     {
         ball.GetComponent<Rigidbody>().useGravity = false;
-        playerCamera.transform.position = new Vector3(Random.Range(-3, 3), 0, Random.Range(-4, 2));
+        //playerCamera.transform.position = new Vector3(Random.Range(-3, 3), (float)0.8, Random.Range(-4, 2));
+        //playerCamera.transform.position = new Vector3(0, (float)0.8, -4);
         hoopPosition = GameObject.Find("ScoreArea");
         distanceToHoop = Vector3.Distance(playerCamera.transform.position, hoopPosition.transform.position);
-        print(distanceToHoop);
+        print("Distance to hoop: " + distanceToHoop);
     }
 
     // Update is called once per frame
