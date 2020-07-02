@@ -672,7 +672,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 0
+    scalar: 0.1
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -5499,7 +5499,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1049622538}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.8, z: -4}
+  m_LocalPosition: {x: 3, y: 0.8, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 734523051}
@@ -5521,7 +5521,7 @@ MonoBehaviour:
   ball: {fileID: 970135227}
   playerCamera: {fileID: 1049622538}
   ballDistance: 2.25
-  ballThrowingForce: 550
+  ballThrowingForce: 490
   holdingBall: 1
   distanceToHoop: 0
 --- !u!1 &903304306
@@ -6111,7 +6111,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381188580}
   serializedVersion: 6
-  lengthInSec: 0.5
+  lengthInSec: 0.7
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0

@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public GameObject playerCamera;
 
     public float ballDistance = 2f;
-    public float ballThrowingForce = 5f;
+    public float ballThrowingForce = 520f;
 
     public bool holdingBall = true;
 
@@ -22,11 +22,10 @@ public class Player : MonoBehaviour
     void Start()
     {
         ball.GetComponent<Rigidbody>().useGravity = false;
-        //playerCamera.transform.position = new Vector3(Random.Range(-3, 3), (float)0.8, Random.Range(-4, 2));
-        //playerCamera.transform.position = new Vector3(0, (float)0.8, -4);
+        playerCamera.transform.position = new Vector3(Random.Range(-3, 3), (float)0.8, Random.Range(-4, 2));
         hoopPosition = GameObject.Find("ScoreArea");
         distanceToHoop = Vector3.Distance(playerCamera.transform.position, hoopPosition.transform.position);
-        print("Distance to hoop: " + distanceToHoop);
+        ballThrowingForce = (290 + (distanceToHoop * 70 / 3));
     }
 
     // Update is called once per frame
