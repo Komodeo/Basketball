@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         ball.GetComponent<Rigidbody>().useGravity = false;
-        playerCamera.transform.position = new Vector3(Random.Range(-3, 3), (float)0.8, Random.Range(-4, 2));
+        playerCamera.transform.position = new Vector3(Random.Range(-3, 3), 2, Random.Range(-3, 3));
         hoopPosition = GameObject.Find("ScoreArea");
         distanceToHoop = Vector3.Distance(playerCamera.transform.position, hoopPosition.transform.position);
         ballThrowingForce = (290 + (distanceToHoop * 70 / 3));
